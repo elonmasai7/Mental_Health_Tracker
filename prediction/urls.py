@@ -1,5 +1,10 @@
 from django.urls import path
 from . import views
+from django.shortcuts import render
+
+def home(request):
+    # Define the logic for your home view here
+    return render(request, 'home.html')  
 
 urlpatterns = [
     path('', views.home, name="home"),
