@@ -1,0 +1,263 @@
+{% extends "prediction/base.html" %}
+
+{% block content %}
+
+<h1>Mental Health Form</h1>
+<br>
+
+<div class="container">
+    
+    <form method="POST" action="">
+        {% csrf_token %}
+        
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you currently feeling nervous?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="feeling_nervous" name="feeling_nervous">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Have you experienced panic recently?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="panic" name="panic">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you breathing rapidly more than usual?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="breathing_rapidly" name="breathing_rapidly">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you find yourself sweating excessively?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="sweating" name="sweating">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you having trouble concentrating?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="trouble_in_concentration" name="trouble_in_concentration">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you have trouble sleeping at night?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="having_trouble_in_sleeping" name="having_trouble_in_sleeping">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you struggling with your work or tasks?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="having_trouble_with_work" name="having_trouble_with_work">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you ever feel a sense of hopelessness?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="hopelessness" name="hopelessness">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you frequently experiencing anger?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="anger" name="anger">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you tend to overreact to situations?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="over_react" name="over_react">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Have you noticed a change in your eating habits?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="change_in_eating" name="change_in_eating">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Have you had any suicidal thoughts?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="suicidal_thought" name="suicidal_thought">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you feeling tired most of the time?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="feeling_tired" name="feeling_tired">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you have a close friend to confide in?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="close_friend" name="close_friend">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you addicted to social media?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="social_media_addiction" name="social_media_addiction">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Have you experienced weight gain recently?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="weight_gain" name="weight_gain">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do material possessions hold significant importance for you?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="material_possessions" name="material_possessions">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Would you consider yourself an introvert?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="introvert" name="introvert">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do stressful memories keep popping up for you?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="popping_up_stressful_memory" name="popping_up_stressful_memory">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you having nightmares while sleeping?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="having_nightmares" name="having_nightmares">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you tend to avoid people or certain activities?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="avoids_people_or_activities" name="avoids_people_or_activities">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you generally feeling negative about things?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="feeling_negative" name="feeling_negative">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Are you having trouble concentrating on tasks?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="trouble_concentrating" name="trouble_concentrating">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 col">
+                <label for="feeling_nervous" class="form-label">Do you often blame yourself for various situations or problems?</label>
+                <div class="col-sm-3">
+                    <select class="form-select" id="blamming_yourself" name="blamming_yourself">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- Repeat the above div for each input field with appropriate labels and options -->
+            
+        <button type="submit" class="btn btn-primary">Analyse</button>
+        <br>
+        <br>
+    </form>
+</div>
+
+
+{% endblock content %}

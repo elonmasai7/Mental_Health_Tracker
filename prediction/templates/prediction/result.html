@@ -1,0 +1,22 @@
+{% extends "prediction/base.html" %}
+{% load static %}
+
+{% block content %}
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+        <h2>You have {{ issue }}</h2>
+        <p class="lead">{{ description }}</p>
+        <br>
+        <div class="card p-3">
+            <br>
+            <p id="additional-content">
+            {{ generated_content | safe }}
+            </p>
+        </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}
