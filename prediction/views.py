@@ -26,4 +26,5 @@ def predict(request):
     return HttpResponse("Prediction results here")
 
 def home(request):
-    return render(request, 'home.html')  # Render a template for the home page
+    return render(request, 'home.html')
+
