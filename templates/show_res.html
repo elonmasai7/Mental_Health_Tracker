@@ -1,0 +1,343 @@
+{% load static %}
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="path/to/fontawesome.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  <!-- /fonts -->
+
+  <!-- style -->
+
+  <link rel='stylesheet' href="{% static 'css/style.css'%}" type='text/css' media='all' />
+  <link rel='stylesheet' href="{% static 'css/skin.responsive.css'%}" type='text/css' media='all' />
+  <link rel='stylesheet' href="{% static 'css/responsive.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'js/revslider/css/settings.min.css'%}" type='text/css' media='all' />
+  <link rel='stylesheet' href="{% static 'css/font-awesome.min.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'js/tooltipster/css/tooltipster.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'js/tooltipster/css/tooltipster-light.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'css/shortcodes/theme.shortcodes.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'css/fontello/css/fontello.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'css/core.animation.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'css/skins/less/skin.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'css/custom-style.css' type='text/css'%}" media='all' />
+  <link rel='stylesheet' href="{% static 'css/animations.css' type='text/css'%}" media='all' />
+  <link rel="stylesheet" href="{% static 'js/swiper/swiper.css" type="text/css'%}" media="all" />
+  <link rel="stylesheet" href="{% static 'js/testimonialcarousel/slick/style.css'%}" media="all" />
+  <!-- /style -->
+  <link rel="stylesheet" href="{% static 'css/maicons.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.carousel.css' %}">
+
+  <link rel="stylesheet" href="{% static 'vendor/animate/animate.css' %}">
+
+  <link rel="stylesheet" href="{% static 'css/theme.css' %}">
+  
+  </head>
+  <body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+
+    <div class="page_wrap">
+      <div class="top_panel_fixed_wrap"></div>
+       <!-- Header -->
+       <header class="top_panel_wrap top_panel_style_3 scheme_original">
+          <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
+              <div class="scheme_dark">
+                  <div class="top_panel_top top_panel_inner_style_3">
+                      <div class="content_wrap clearfix">
+                          <div class="top_panel_top_contact_area contact_address">
+                              <i class="fa fa-regular fa-flag"></i>
+                              <span>123, Cairo Egypt, IL 60606</span>
+                          </div>
+                          <div class="top_panel_top_user_area">
+                              <div class="top_panel_top_contact_area contact_email">
+                                  <i class="fa fa-solid fa-envelope"></i>
+                                  <span><a href="mailto:info@yoursite.com">info@yoursite.com</a></span>
+                              </div>
+                              <div class="top_panel_top_contact_area contact_phone">
+                                  <i class="fa fa-thin fa-phone"></i>
+
+                                  <span><a href="tel:+1234567890">123-456-7890</a></span>
+                              </div>
+                              <ul id="menu_user" class="menu_user_nav">
+                                  <li class="menu-item menu-item-type-post_type">
+                                      <a href="{% url 'appointments'%}">Make an appointment</a>
+
+
+                                  </li>
+                              </ul>
+                          </div>
+                      </div>                                                  
+                  </div>
+              </div>
+              <div class="scheme_light">
+                  <div class="top_panel_middle top_panel_inner_style_3">
+                      <div class="content_wrap">
+                          <div class="contact_logo">
+                              <div class="logo">
+                                  <a href="">
+                                          <img src="{% static 'images/a55.png'%}" class="logo_main"  alt="">
+                                          <img src="{% static 'images/s22.png'%}" class="logo_fixed" alt="">
+                                      </a>
+                              </div>
+                          </div>
+                          <div class="menu_main_wrap">
+                              <nav class="menu_main_nav_area">
+                                  <ul id="menu_main" class="menu_main_nav" >
+                                      <li class="menu-item menu-item-has-childrencurrent-menu-item">
+                                          <a href="{% url 'index'%}">Home 
+                                          </a>
+                                         
+                                      </li>
+                                      <li class="menu-item current-menu-ancestor current-menu-parent menu-it em-has-children">
+                                          <a href="{% url 'about-me'%}">About-us</a>
+                                          
+                                      </li>
+                                      
+                                      <li class="menu-item">
+                                          <a href="{% url 'categorywithoutsidebar'%}">Information</a>
+                                      </li>
+                                             
+                                              
+                                      </li>
+                                      <li class="menu-item menu-item-has-childre n">
+                                          <a href="{% url 'shop'%}">pharmacy</a>
+                                          
+                                      </li>
+                                      <li class="menu-item">
+                                          <a href="{% url 'contact'%}">Contact</a>
+                                          <ul class="sub-menu">
+                                              <li class="menu-item">
+                                                  <a href="{% url 'lobby1'%}">contact With Video</a>
+                                              </li>
+                                              
+                                          </ul>
+                                      </li>
+                                      <li class="menu-item menu-item-has-childre n">
+                                          <a href="{% url 'depretion'%}">Tests</a>
+                                          <ul class="sub-menu">
+                                              <li class="menu-item">
+                                                  <a href="{% url 'depretion'%}">Depretion</a>
+                                              </li>
+                                              <li class="menu-item">
+                                                  <a href="{% url 'adhd'%}">ADHD</a>
+                                              </li>
+                                              <li class="menu-item">
+                                                  <a href="{% url 'anxiety'%}">anxiety</a>
+                                              </li>
+                                              <li class="menu-item">
+                                                  <a href="{% url 'bipolar'%}">Bipolar</a>
+                                              </li>
+                                          </ul>
+                                      </li>
+                                      <li class="menu-item menu-item-has-childre n">
+                                          <a href="{% url 'depretion'%}">Genes Test</a>
+                                          <ul class="sub-menu">
+                                              <li class="menu-item">
+                                                  <a href="{% url 'form3' %}">Compute GC Test</a>
+                                              </li>
+                                              <li class="menu-item">
+                                                  <a href="{% url 'form4'%}">Parse Sequence for Motif Test</a>
+                                              </li>
+                                              <li class="menu-item">
+                                                  <a href="{% url 'form5'%}">Gene Base Distribution Test</a>
+                                              </li>
+                                              
+                                          </ul>
+                                          
+                                      </li>
+                                      <li class="menu-item menu-item-has-childre n"><a href="#">ML</a>
+                                          <ul class="sub-menu">
+                                              <li class="menu-item">
+                                                  <a href="{%url 'ml'%}">Brain Viewer</a>
+                                              </li>
+                                              <li class="menu-item">
+                                                  <a href="{%url 'Radiology_Diagnostics'%}">ML Model</a>
+                                              </li>
+                                              
+                                  </ul>
+                              </nav>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header>
+      <!-- /Header -->
+
+
+
+
+     <p></p>
+      </a>
+    </ol>
+  </div> <!-- .bg-light -->
+  <div class="page-section pb-0">
+   
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="container text-center"><br><br>
+     <h1>Machine learning model for image brain schizophrenia recognition</h1> 
+     <p></p>
+
+<div class="page-hero big-image overlay-dark"style="background-image:url('{% static "images/s4.jpg" %} ');">
+     
+  <div class="hero-section">
+    <div class="container text-center wow zoomout">
+      <span class="subhead">upload your medical image</span>
+      <h1 class="display-4">ML MODEL</h1>
+
+      <form  method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+             <div class="container text-center wow zoomout" style="position: relative;right: 100px;">
+              
+               <input style="padding: 20px 100px; margin-right: 100px;" class="post_readmore_label" id="my-file" type="file" name="myfile">
+               <label for="my-file" class="post_readmore_label" tabindex="0">
+                 Select a file...
+               </label>
+               <p class="file-return"></p>
+               <button id="checkk" style="padding: 20px 100px; margin-right: -200px;" type="submit"  class="post_readmore_label"></button>
+               <a href="{% url 'show_res2' %}" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small margin_top_small" >show Result
+
+             </div>
+             
+                  
+          
+      </form>
+    </div>
+  </div>
+</div>
+
+{% block content %}
+
+  
+	<div class="container">
+	   <!-- file input -->
+	<div >
+      
+
+
+	</div>
+	</div>
+</div>
+
+{% endblock %}
+
+
+
+    </div>
+
+<p></p>
+
+
+
+    
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+  <!-- Back to top button -->
+  <div class="col-lg-12 wow fadeInRight" data-wow-delay="400ms">
+    <div class="img-place custom-img-1">
+      <img class="img-place custom-img-1" src="{% static 'images/cancer2.png' %}" alt="">
+
+    </div>
+</div>
+
+		<div ><h1 class="btn btn-primary ml-lg-1" style="text-align: center;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;text-shadow: .5px .5px ;  text-align: center;
+        text-transform: capitalize;color: rgb(255, 255, 255) ; font-size: 250%;padding: 40px;"><b>Unfortunately,</b>you are  diagnosed  with schizophrenia 🙁<br><br>And you should concult the doctor And Begin in Treatment  </h1><br>
+</div>
+
+</div>
+<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+  
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  
+  <script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+  
+  <script src="{% static 'vendor/wow/wow.min.js' %}"></script>
+  
+  <script src="{% static 'js/theme.js' %}"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script type='text/javascript' src="{% static 'js/_main.js' %}"></script>
+  <script type='text/javascript' src="{% static 'js/packed.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/revslider/jquery.themepunch.revolution.min.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/revslider/jquery.themepunch.tools.min.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/revslider/jquery.themepunch.enablelog.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.slideanims.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.navigation.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.parallax.min.js '%}"></script>
+  <script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.slideanims.min.js'%}"></script>
+  <script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.actions.min.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/theme.init.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/core.utils.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/core.init.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/theme.shortcodes.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/swiper/swiper.js'%}"></script>
+  <script type='text/javascript' src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  
+
+  <!-- /All Script -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a764b0c2b6b5386","token":"dab7be3e6ab04952b40d6c8e93f6cc2a","version":"2023.2.0","si":100}'
+      crossorigin="anonymous"></script>
+  </body>
+
+  
+  </html>

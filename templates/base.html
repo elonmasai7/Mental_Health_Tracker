@@ -1,0 +1,105 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Dento - Dentist &amp; Medical HTML Template">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  <title>Docmed {% block title %} {% endblock %}</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{% static 'img/core-img/favicon.ico' %}">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    {% block styles %} {% endblock %}
+
+</head>
+
+<body>
+   {% include 'nav.html' %}
+
+  <!-- ***** Header Area End ***** -->
+      {% block content %}
+  {% endblock  %}
+  <!-- ***** Welcome Area Start ***** -->
+
+  <!-- ***** Blog Area End ***** -->
+
+  <!-- ***** Footer Area Start ***** -->
+  <!-- footer -->
+  <footer class="contacts_wrap scheme_light">
+    <div class="contacts_wrap_inner">
+        <div class="content_wrap">
+            <div class="logo">
+                <a href="">
+                        <img src="{% static 'images/a55.png'%}" class="logo_footer" alt="">
+                    </a>
+            </div>
+            <div class="contacts_address">
+                <address class="address_right">
+                        Phone: <a href="tel:+1234567890">123-456-7890</a><br> Fax: <a href="tel:+1234567890">123.456.7890</a>
+                    </address>
+                <address class="address_left">
+                        123, Cairo<br> Egypt, IL 60606 
+                    </address>
+            </div>
+            <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                <div class="sc_socials_item">
+                    <a href="#" target="_blank" class="social_icons social_twitter">
+                        <i class="fa fa-brands fa-twitter"></i>                                </a>
+                </div>
+                <div class="sc_socials_item">
+                    <a href="#" target="_blank" class="social_icons social_facebook">
+                        <i class="fa fa-brands fa-facebook"></i>                                </a>
+                </div>
+                <div class="sc_socials_item">
+                    <a href="#" target="_blank" class="social_icons social_linkedin">
+                        <i class="fa fa-brands fa-linkedin"></i>
+
+                    </a>
+                    
+                </div>
+                <div class="container">
+                    <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+                      <input name="q" type="text" placeholder="Search Google..." autocomplete="off"  >
+                            <button type="button"><i class="fa fas fa-microphone"></i></button> 
+                    </form>
+                    <p class="info"></p>
+                  </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
+  <!-- ***** Footer Area End ***** -->
+
+  <!-- ******* All JS ******* -->
+  <!-- jQuery js -->
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <!-- Popper js -->
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <!-- Bootstrap js -->
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  <!-- All js -->
+  <script src="{% static 'js/dento.bundle.js' %}"></script>
+  <!-- Active js -->
+  <script src="{% static 'js/default-assets/active.js' %}"></script>
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+   {% block javascripts %} {% endblock %}
+   
+</body>
+
+</html>

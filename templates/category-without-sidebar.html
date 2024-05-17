@@ -1,0 +1,645 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en-US" class="scheme_original">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+
+    <title> Without Sidebar - Cloe Brooks - Psychologist</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+    <!-- /fonts -->
+
+    <!-- style -->
+    <link rel='stylesheet' href="{% static 'css/style.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/skin.responsive.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/responsive.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/font-awesome.min.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'js/tooltipster/css/tooltipster.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'js/tooltipster/css/tooltipster-light.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'js/mediaelement/wp-mediaelement.min.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'js/mediaelement/mediaelementplayer.min.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/shortcodes/theme.shortcodes.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/fontello/css/fontello.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/core.animation.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/skins/less/skin.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/custom-style.css' %}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/animations.css' %}" type='text/css' media='all' />
+    <link rel="stylesheet" href="{% static 'js/swiper/swiper.css' %}" type="text/css" media="all">
+    <!-- /style -->
+</head>
+
+<body class="archive category category-without-sidebar category-7 cloe_brooks_body body_style_wide body_transparent theme_skin_less article_style_stretch layout_excerpt template_excerpt scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide">
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+              <!-- Header -->
+              <header class="top_panel_wrap top_panel_style_3 scheme_original">
+                <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
+                    <div class="scheme_dark">
+                        <div class="top_panel_top top_panel_inner_style_3">
+                            <div class="content_wrap clearfix">
+                                <div class="top_panel_top_contact_area contact_address">
+                                    <i class="fa fa-regular fa-flag"></i>
+                                    <span>123, Cairo Egypt, IL 60606</span>
+                                </div>
+                                <div class="top_panel_top_user_area">
+                                    <div class="top_panel_top_contact_area contact_email">
+                                        <i class="fa fa-solid fa-envelope"></i>
+                                        <span><a href="mailto:info@yoursite.com">info@yoursite.com</a></span>
+                                    </div>
+                                    <div class="top_panel_top_contact_area contact_phone">
+                                        <i class="fa fa-thin fa-phone"></i>
+
+                                        <span><a href="tel:+1234567890">123-456-7890</a></span>
+                                    </div>
+                                    <ul id="menu_user" class="menu_user_nav">
+                                        <li class="menu-item menu-item-type-post_type">
+                                            <a href="{% url 'appointments'%}">Make an appointment</a>
+  
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                                                  
+                        </div>
+                    </div>
+                    <div class="scheme_light">
+                        <div class="top_panel_middle top_panel_inner_style_3">
+                            <div class="content_wrap">
+                                <div class="contact_logo">
+                                    <div class="logo">
+                                        <a href="">
+                                                <img src="{% static 'images/a55.png'%}" class="logo_main"  alt="">
+                                                <img src="{% static 'images/s22.png'%}" class="logo_fixed" alt="">
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="menu_main_wrap">
+                                    <nav class="menu_main_nav_area">
+                                        <ul id="menu_main" class="menu_main_nav" >
+                                            <li class="menu-item menu-item-has-childrencurrent-menu-item">
+                                                <a href="{% url 'index'%}">Home 
+                                                </a>
+                                               
+                                            </li>
+                                            <li class="menu-item current-menu-ancestor current-menu-parent menu-it em-has-children">
+                                                <a href="{% url 'about-me'%}">About-us</a>
+                                                
+                                            </li>
+                                            
+                                            <li class="menu-item">
+                                                <a href="{% url 'categorywithoutsidebar'%}">Information</a>
+                                            </li>
+                                                   
+                                                    
+                                            </li>
+                                            <li class="menu-item menu-item-has-childre n">
+                                                <a href="{% url 'shop'%}">pharmacy</a>
+                                                
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{% url 'contact'%}">Contact</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'lobby1'%}">contact With Video</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-childre n">
+                                                <a href="{% url 'depretion'%}">Tests</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'depretion'%}">Depretion</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'adhd'%}">ADHD</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'anxiety'%}">anxiety</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'bipolar'%}">Bipolar</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-childre n">
+                                                <a href="{% url 'depretion'%}">Mental Health Genes Test</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'depretion'%}">Depretion</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'adhd'%}">ADHD</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'anxiety'%}">anxiety</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'bipolar'%}">Bipolar</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- header_mobile -->
+            <div class="header_mobile">
+                <div class="content_wrap">
+                    <div class="menu_button icon-menu"></div>
+                    <div class="logo">
+                        <a href="#">
+                                <img src="images/logo_light.png" class="logo_main" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="side_wrap">
+                    <div class="close">Close</div>
+                    <!-- panel_top -->
+                    <div class="panel_top">
+                        <ul id="menu_main_mobile" class="menu_main_nav">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Home</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="#">Home 1</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="index-2.html">Home 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item current-menu-ancestor ">
+                                <a href="#">Features</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="about-me.html">About Me</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="pricing.html">Pricing</a></li>
+                                    <li class="menu-item">
+                                        <a href="shortcodes.html">Shortcodes</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="typography.html">Typography</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a target="_blank" href="doc/#">Documentation</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Gallery</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="gallery-grid.html">Grid Gallery</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="gallery-masonry.html">Masonry Gallery</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="gallery-cobbles.html">Cobbles Gallery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children current-menu-parent menu-item-has-children">
+                                <a href="#">Blog</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="category-standard-blog.html">Standard Blog</a>
+                                    </li>
+                                    <li class="menu-item current-menu-item page_item current_page_item">
+                                        <a href="category-without-sidebar.html">Without Sidebar</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Masonry</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="category-masonry-2-columns.html">Masonry 2 Columns</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="category-masonry-3-columns.html">Masonry 3 Columns</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="category-portfolio-2-columns.html">
+                                                        Portfolio 2 Columns
+                                                    </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="category-portfolio-3-columns.html">
+                                                        Portfolio 3 Columns
+                                                    </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="category-post-formats.html">
+                                                Post Formats
+                                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="shop.html">Shop</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="product-single.html">Single Product</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Forums</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="activity.html">Activity</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="groups.html">Groups</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="members.html">Members</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /panel_top -->
+
+                    <!-- panel_middle -->
+                    <div class="panel_middle">
+                        <div class="contact_field contact_phone">
+                            <span class="contact_icon icon-phone"></span>
+                            <span class="contact_label contact_phone">123-456-7890</span>
+                            <span class="contact_email">info@yoursite.com</span>
+                        </div>
+                    </div>
+                    <!-- /panel_middle -->
+                </div>
+                <div class="mask"></div>
+                <!-- /header_mobile -->
+            </div>
+        </div>
+        <!-- top_panel -->
+        <div class="top_panel_title top_panel_style_3  title_present breadcrumbs_present scheme_dark">
+            <div class="top_panel_title_inner top_panel_inner_style_3  title_present_inner breadcrumbs_present_inner panel_img">
+                <div class="content_wrap">
+                    <h1 class="page_title">Information</h1>
+                    <div class="breadcrumbs">
+                        <a class="breadcrumbs_item home" href="#">Home</a>
+                        <span class="breadcrumbs_delimiter"></span>
+                        <span class="breadcrumbs_item current">Information</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /top_panel -->
+
+        <div class="page_content_wrap page_paddings_yes">
+            <div class="content_wrap">
+                <div class="content">
+                    <h3>The psychology of post-traumatic stress disorder </h3>
+                    <!-- post -->
+                    <div class="post_item post_item_excerpt post_featured_default post_format_standard odd post type-post status-publish format-standard has-post-thumbnail">
+                        <div class="post_featured">
+                            <div class="post_thumb">
+                                    <video width="1500px" height="700px" 
+                                    controls="controls"> 
+                                      
+                                    <source src="{% static 'images\v1.mp4' %}" 
+                                        type="video/mp4"> 
+                                </video>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="post_content clearfix">
+                            <h3 class="post_title">
+                                <a href="post-standard.html">
+                                        Dealing with Mental Trauma of Severe Desease
+                                    </a>
+                            </h3>
+                            <div class="post_info">
+                                <span class="post_info_item post_info_tags">in 
+                                        <a class="category_link" href="https://ed.ted.com/lessons/the-psychology-of-post-traumatic-stress-disorder-joelle-maletis">Sourse</a>, 
+                                        <a class="category_link" href="https://ed.ted.com/lessons/the-psychology-of-post-traumatic-stress-disorder-joelle-maletis"></a>
+                                    </span>
+                                <span class="post_info_item post_info_posted"> 
+                                        <a href="https://ed.ted.com/lessons/the-psychology-of-post-traumatic-stress-disorder-joelle-maletis" class="post_info_date">February 20, 2016</a>
+                                    </span>
+                                <span class="post_info_item post_info_counters"> 
+                                        <a class="post_counters_item post_counters_comments icon-chat" title="Comments - 1" href="#">   <span class="post_counters_number">1</span>
+                                </a>
+                                <a class="post_counters_item post_counters_likes icon-heart-empty enabled" title="Like" href="#">
+                                            <span class="post_counters_number">0</span>
+                                        </a>
+                                </span>
+                            </div>
+                            <div class="post_descr">
+                                <p>Researchers found that people with PTSD continue to produce higher levels of stress hormones after the trauma is over,</p>
+                                <a href="https://ed.ted.com/lessons/the-psychology-of-post-traumatic-stress-disorder-joelle-maletis" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">
+                                        Read more
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /post -->
+
+                    <!-- post -->
+                    <div class="post_item post_item_excerpt post_featured_default post_format_standard odd post type-post status-publish format-standard has-post-thumbnail">
+                        <div class="post_featured">
+                            <h3> What is a Placebo Effect?</h3>
+                            <div class="post_thumb">
+                                        <img alt="Dealing with Mental Trauma of Severe Desease" src="{% static 'images/a3.jpg'%}">
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="post_content clearfix">
+                            <h3 class="post_title">
+                                <a href="https://www.webmd.com/pain-management/what-is-the-placebo-effect">
+                                        
+                                    </a>
+                            </h3>
+                            <div class="post_info">
+                                <span class="post_info_item post_info_tags">in 
+                                        <a class="category_link" href="https://www.webmd.com/pain-management/what-is-the-placebo-effect">sourse</a>, 
+                                        <a class="category_link" href="https://www.webmd.com/pain-management/what-is-the-placebo-effect"></a>
+                                    </span>
+                                <span class="post_info_item post_info_posted"> 
+                                        <a href="#" class="post_info_date">February 20, 2016</a>
+                                    </span>
+                                <span class="post_info_item post_info_counters"> 
+                                        <a class="post_counters_item post_counters_comments icon-chat" title="Comments - 1" href="#">   <span class="post_counters_number">1</span>
+                                </a>
+                                <a class="post_counters_item post_counters_likes icon-heart-empty enabled" title="Like" href="#">
+                                            <span class="post_counters_number">0</span>
+                                        </a>
+                                </span>
+                            </div>
+                            <div class="post_descr">
+                                <p> A placebo is anything that seems to be a "real" medical treatment -- but isn't. It could be a pill, a shot, or some other type of "fake" </p>
+                                <a href="https://www.webmd.com/pain-management/what-is-the-placebo-effect" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">
+                                        Read more
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /post -->
+
+                    <!-- post -->
+                    <div class="post_item post_item_excerpt post_featured_default post_format_standard odd post type-post status-publish format-standard has-post-thumbnail">
+                        <div class="post_featured">
+                            <h3>What is Mental Health?</h3>
+                            <div class="post_thumb">
+                                     <video width="1500px" height="700px" 
+                                    controls="controls"> 
+                                      
+                                    <source src="{% static 'images\v4.mp4' %}" 
+                                        type="video/mp4"> 
+                                </video>                                    </a>
+                            </div>
+                        </div>
+                        <div class="post_content clearfix">
+                            <h3 class="post_title">
+                                <a href="post-standard.html">
+                                       
+                                    </a>
+                            </h3>
+                            <div class="post_info">
+                                <span class="post_info_item post_info_tags">in 
+                                        <a class="category_link" href="https://www.cdc.gov/mentalhealth/learn/index.htm#:~:text=Mental%20health%20includes%20our%20emotional,childhood%20and%20adolescence%20through%20adulthood.">source</a>, 
+                                        <a class="category_link" href="https://www.cdc.gov/mentalhealth/learn/index.htm#:~:text=Mental%20health%20includes%20our%20emotional,childhood%20and%20adolescence%20through%20adulthood."></a>
+                                    </span>
+                                <span class="post_info_item post_info_posted"> 
+                                        <a href="#" class="post_info_date">February 20, 2016</a>
+                                    </span>
+                                <span class="post_info_item post_info_counters"> 
+                                        <a class="post_counters_item post_counters_comments icon-chat" title="Comments - 1" href="#">   <span class="post_counters_number">1</span>
+                                </a>
+                                <a class="post_counters_item post_counters_likes icon-heart-empty enabled" title="Like" href="#">
+                                            <span class="post_counters_number">0</span>
+                                        </a>
+                                </span>
+                            </div>
+                            <div class="post_descr">
+                                <p>Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. 1. Mental health is important at every stage of life, from childhood and adolescence through adulthood.</p>
+                                <a href="https://www.cdc.gov/mentalhealth/learn/index.htm#:~:text=Mental%20health%20includes%20our%20emotional,childhood%20and%20adolescence%20through%20adulthood." class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">
+                                        Read more
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /post -->
+
+                    <!-- post -->
+                    <div class="post_item post_item_excerpt post_featured_default post_format_standard odd post type-post status-publish format-standard has-post-thumbnail">
+                        <div class="post_featured">
+                            <h3>ARE YOU DEPRESSED? 5 QUESTIONS TO ASK YOURSELF</h3>
+                            <div class="post_thumb">
+                                     <video width="1500px" height="700px" 
+                                    controls="controls"> 
+                                      
+                                    <source src="{% static 'images\v5.mp4' %}" 
+                                        type="video/mp4"> 
+                                </video>
+                                    </a>
+                            </div>
+                        </div>
+                        <div class="post_content clearfix">
+                            <h3 class="post_title">
+                                <a href="https://genesisbehavioralhealth.org/depression/depression-questions-to-ask-yourself/">
+                                        Depretion Meds Put You at Risk
+                                    </a>
+                            </h3>
+                            <div class="post_info">
+                                <span class="post_info_item post_info_tags">in 
+                                        <a class="category_link" href="https://genesisbehavioralhealth.org/depression/depression-questions-to-ask-yourself/">Source</a>, 
+                                        <a class="category_link" href="https://genesisbehavioralhealth.org/depression/depression-questions-to-ask-yourself/"></a>
+                                    </span>
+                                <span class="post_info_item post_info_posted"> 
+                                        <a href="#" class="post_info_date">February 20, 2016</a>
+                                    </span>
+                                <span class="post_info_item post_info_counters"> 
+                                        <a class="post_counters_item post_counters_comments icon-chat" title="Comments - 1" href="#">   <span class="post_counters_number">1</span>
+                                </a>
+                                <a class="post_counters_item post_counters_likes icon-heart-empty enabled" title="Like" href="#">
+                                            <span class="post_counters_number">0</span>
+                                        </a>
+                                </span>
+                            </div>
+                            <div class="post_descr">
+                                <p>Do you have depression? Mental health providers use many different tools to try to answer that question. One of the most common tools they </p>
+                                <a href="https://genesisbehavioralhealth.org/depression/depression-questions-to-ask-yourself/" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">
+                                        Read more
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /post -->
+
+                    <!-- post -->
+                    <div class="post_item post_item_excerpt post_featured_default post_format_standard odd post type-post status-publish format-standard has-post-thumbnail">
+                        <div class="post_featured">
+                            <div class="post_thumb">
+                                <h3>Anxiety Disorder Test</h3>
+                                     <video width="1500px" height="700px" 
+                                    controls="controls"> 
+                                      
+                                    <source src="{% static 'images\v6.mp4' %}" 
+                                        type="video/mp4"> 
+                                </video>                                    </a>
+                            </div>
+                        </div>
+                        <div class="post_content clearfix">
+                            <h3 class="post_title">
+                                <a href="https://www.clinical-partners.co.uk/for-adults/anxiety-disorders/anxiety-test">
+                                    Are you feeling anxious, overwhelmed or on edge? Our online anxiety test will help you understand if your feelings could be a sign of an anxiety disorder.
+                                    </a>
+                            </h3>
+                            <div class="post_info">
+                                <span class="post_info_item post_info_tags">in 
+                                        <a class="category_link" href="https://www.clinical-partners.co.uk/for-adults/anxiety-disorders/anxiety-test">Source</a>, 
+                                        <a class="category_link" href="https://www.clinical-partners.co.uk/for-adults/anxiety-disorders/anxiety-test"></a>
+                                    </span>
+                                <span class="post_info_item post_info_posted"> 
+                                        <a href="#" class="post_info_date">February 20, 2016</a>
+                                    </span>
+                                <span class="post_info_item post_info_counters"> 
+                                        <a class="post_counters_item post_counters_comments icon-chat" title="Comments - 1" href="#">   <span class="post_counters_number">1</span>
+                                </a>
+                                <a class="post_counters_item post_counters_likes icon-heart-empty enabled" title="Like" href="#">
+                                            <span class="post_counters_number">0</span>
+                                        </a>
+                                </span>
+                            </div>
+                            <div class="post_descr">
+                                <p>Are you feeling anxious, overwhelmed or on edge? Our online anxiety test will help you understand if your feelings could be a sign of an anxiety disorder.</p>
+                                <a href="https://www.clinical-partners.co.uk/for-adults/anxiety-disorders/anxiety-test" class="sc_button sc_button_square sc_button_style_filled sc_button_size_small">
+                                        Read more
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /post -->
+                </div>
+            </div>
+        </div>
+
+         <!-- footer -->
+         <footer class="contacts_wrap scheme_light">
+            <div class="contacts_wrap_inner">
+                <div class="content_wrap">
+                    <div class="logo">
+                        <a href="">
+                                <img src="{% static 'images/a55.png'%}" class="logo_footer" alt="">
+                            </a>
+                    </div>
+                    <div class="contacts_address">
+                        <address class="address_right">
+                                Phone: <a href="tel:+1234567890">123-456-7890</a><br> Fax: <a href="tel:+1234567890">123.456.7890</a>
+                            </address>
+                        <address class="address_left">
+                                123, Cairo<br> Egypt, IL 60606 
+                            </address>
+                    </div>
+                    <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_twitter">
+                                <i class="fa fa-brands fa-twitter"></i>                                </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_facebook">
+                                <i class="fa fa-brands fa-facebook"></i>                                </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_linkedin">
+                                <i class="fa fa-brands fa-linkedin"></i>
+
+                            </a>
+                        </div>
+                        <div class="container">
+                            <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+                              <input name="q" type="text" placeholder="Search Google..." autocomplete="off"  >
+                                    <button type="button"><i class="fa fas fa-microphone"></i></button> 
+                            </form>
+                            <p class="info"></p>
+                          </div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- copyright_wrap footer-->
+    
+    </div>
+    <!-- Scroll to top -->
+    <a  href="#" class="scroll_to_top icon- up"  title="Scroll to top">
+        <i class="fa fa-solid fa-arrow-up"></i>
+
+       
+    </a>
+    
+
+        <!-- copyright_wrap footer-->
+        <div class="copyright_wrap copyright_style_text scheme_dark">
+            <div class="copyright_wrap_inner">
+                <div class="content_wrap">
+                    <div class="copyright_text">
+                        <a href="#" target="_blank" class="copyright_link">Mental Health</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /copyright_wrap footer -->
+    </div>
+
+    <!-- Scroll to top -->
+    <a  href="#" class="scroll_to_top icon- up"  title="Scroll to top">
+        <i class="fa fa-solid fa-arrow-up"></i>
+
+       
+    </a>
+
+    <!-- All Script -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type='text/javascript' src="{% static 'js/_main.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/packed.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/photostack/modernizr.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/theme.init.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/core.utils.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/core.init.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/testimonialcarousel/slick/slick.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/draggabletimeline/js/draggabletimeline.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/draggabletimeline/js/perfect-scrollbar.jquery.min.js' %}"></script>
+    <script type='text/javascript' src="{% static 'js/theme.shortcodes.js' %}"></script>
+    <!-- /All Script -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a764839fcdf28ea","token":"dab7be3e6ab04952b40d6c8e93f6cc2a","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

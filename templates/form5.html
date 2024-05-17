@@ -1,0 +1,407 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" class="scheme_original">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.jpg'%}" />
+
+    <title> Mental-Health</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="path/to/fontawesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- /fonts -->
+
+    <!-- style -->
+
+    <link rel='stylesheet' href="{% static 'css/style.css'%}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/skin.responsive.css'%}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/responsive.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'js/revslider/css/settings.min.css'%}" type='text/css' media='all' />
+    <link rel='stylesheet' href="{% static 'css/font-awesome.min.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'js/tooltipster/css/tooltipster.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'js/tooltipster/css/tooltipster-light.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'css/shortcodes/theme.shortcodes.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'css/fontello/css/fontello.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'css/core.animation.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'css/skins/less/skin.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'css/custom-style.css' type='text/css'%}" media='all' />
+    <link rel='stylesheet' href="{% static 'css/animations.css' type='text/css'%}" media='all' />
+    <link rel="stylesheet" href="{% static 'js/swiper/swiper.css" type="text/css'%}" media="all" />
+    <link rel="stylesheet" href="{% static 'js/testimonialcarousel/slick/style.css'%}" media="all" />
+    <!-- /style -->
+</head>
+
+<body class="page cloe_brooks_body body_style_wide body_transparent theme_skin_less article_style_stretch layout_single-standard scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide">
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+             <!-- Header -->
+             <header class="top_panel_wrap top_panel_style_3 scheme_original">
+                <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
+                    <div class="scheme_dark">
+                        <div class="top_panel_top top_panel_inner_style_3">
+                            <div class="content_wrap clearfix">
+                                <div class="top_panel_top_contact_area contact_address">
+                                    <i class="fa fa-regular fa-flag"></i>
+                                    <span>123, Cairo Egypt, IL 60606</span>
+                                </div>
+                                <div class="top_panel_top_user_area">
+                                    <div class="top_panel_top_contact_area contact_email">
+                                        <i class="fa fa-solid fa-envelope"></i>
+                                        <span><a href="mailto:info@yoursite.com">info@yoursite.com</a></span>
+                                    </div>
+                                    <div class="top_panel_top_contact_area contact_phone">
+                                        <i class="fa fa-thin fa-phone"></i>
+
+                                        <span><a href="tel:+1234567890">123-456-7890</a></span>
+                                    </div>
+                                    <ul id="menu_user" class="menu_user_nav">
+                                        <li class="menu-item menu-item-type-post_type">
+                                            <a href="{% url 'appointments'%}">Make an appointment</a>
+  
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                                                  
+                        </div>
+                    </div>
+                    <div class="scheme_light">
+                        <div class="top_panel_middle top_panel_inner_style_3">
+                            <div class="content_wrap">
+                                <div class="contact_logo">
+                                    <div class="logo">
+                                        <a href="">
+                                                <img src="{% static 'images/a55.png'%}" class="logo_main"  alt="">
+                                                <img src="{% static 'images/s22.png'%}" class="logo_fixed" alt="">
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="menu_main_wrap">
+                                    <nav class="menu_main_nav_area">
+                                        <ul id="menu_main" class="menu_main_nav" >
+                                            <li class="menu-item menu-item-has-childrencurrent-menu-item">
+                                                <a href="{% url 'index'%}">Home 
+                                                </a>
+                                               
+                                            </li>
+                                            <li class="menu-item current-menu-ancestor current-menu-parent menu-it em-has-children">
+                                                <a href="{% url 'about-me'%}">About-us</a>
+                                                
+                                            </li>
+                                            
+                                            <li class="menu-item">
+                                                <a href="{% url 'categorywithoutsidebar'%}">Information</a>
+                                            </li>
+                                                   
+                                                    
+                                            </li>
+                                            <li class="menu-item menu-item-has-childre n">
+                                                <a href="{% url 'shop'%}">pharmacy</a>
+                                                
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{% url 'contact'%}">Contact</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'lobby1'%}">contact With Video</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-childre n">
+                                                <a href="{% url 'depretion'%}">Tests</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'depretion'%}">Depretion</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'adhd'%}">ADHD</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'anxiety'%}">anxiety</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'bipolar'%}">Bipolar</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-childre n">
+                                                <a href="{% url 'depretion'%}">Mental Health Genes Test</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'form3' %}">Compute GC Test</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'form4'%}">Parse Sequence for Motif Test</a>
+                                                    </li>
+                                                  
+                                                    
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+
+
+
+  
+
+
+    <div class="page-section pb-0">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3 wow fadeInUp">
+            
+                
+           </div>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div> <!-- .bg-light -->
+    <h1 class="col-lg-15 wow fadeInRight">
+      All processes for Mental Health Genes Analysis </h1>
+      <ol id='list'>
+     
+        <a class="btn btn-primary ml-lg-3" href="{% url 'form3'%}">Compute GC</a>
+        <a class="btn btn-primary ml-lg-3" href="{% url 'form4'%}">Parse Sequence for Motif</a>
+  
+  
+  
+  
+       <p></p>
+        </a>
+      </ol>
+  </div> <!-- .bg-light -->
+  <div class="page-section pb-0">
+   
+      <div class="container">
+        <h1>DNA Base Distribution</h1>
+
+        <img class="my-icon" src="{% static 'images/about_me.jpg'%}" >
+      </div>
+    </div>
+    <div class="container text-center"><br><br>
+
+      {% block content %}
+
+      <!--Jumbotron header for this page-->
+        <div class="container">
+          
+      </div>
+      <div class="container text-center"><br><br>
+
+        <!--UI form for this page-->
+        <form method="POST">
+          {% csrf_token %}
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <p><label label style="color:rgb(11, 67, 127)" for="id_post">Input Sequence:<br></label></p>
+            </div>
+            <div class="col-md-9 text-left">
+              <!--Post input-->
+              <p><textarea rows=7 cols=80 name="post" required id="id_post"></textarea>{{post}}</p>
+            </div>
+          </div>
+
+          <!--Submit button-->
+          <div class="row">
+            <div class="col-md-9 text-right">
+              <button class="btn btn-primary ml-lg-3" type="submit">Submit</button><br><br>
+            </div>
+          </div>
+
+        </form>
+
+        <!--Output-->
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-9 text-left">
+            <table>
+              <thead>
+                <tr>
+                  <th>
+                  <th>A
+                  <th>T
+                  <th>C
+                  <th>G
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <!--Iterates through result and outputs count information-->
+                  <th style="color: rgb(127, 5, 5);"  class="text-primary">Count
+                  {% for count in result %}
+                    <td >{{count}}</td>
+                  {% endfor %}
+                </tr>
+                <tr>
+                  <!--Distribution information-->
+                  <th style="color: rgb(127, 5, 5);"  class="text-primary">Distribution </th>    
+                  {% for portion in distribution %}
+                    <td style="color: rgb(127, 5, 5);"  >{{portion}}</td>
+                    
+                  {% endfor %}
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      {% endblock %}
+
+
+    </div>
+
+<p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- footer -->
+   <footer class="contacts_wrap scheme_light">
+    <div class="contacts_wrap_inner">
+        <div class="content_wrap">
+            <div class="logo">
+                <a href="">
+                        <img src="{% static 'images/a55.png'%}" class="logo_footer" alt="">
+                    </a>
+            </div>
+            <div class="contacts_address">
+                <address class="address_right">
+                        Phone: <a href="tel:+1234567890">123-456-7890</a><br> Fax: <a href="tel:+1234567890">123.456.7890</a>
+                    </address>
+                <address class="address_left">
+                        123, Cairo<br> Egypt, IL 60606 
+                    </address>
+            </div>
+            <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                <div class="sc_socials_item">
+                    <a href="#" target="_blank" class="social_icons social_twitter">
+                        <i class="fa fa-brands fa-twitter"></i>                                </a>
+                </div>
+                <div class="sc_socials_item">
+                    <a href="#" target="_blank" class="social_icons social_facebook">
+                        <i class="fa fa-brands fa-facebook"></i>                                </a>
+                </div>
+                <div class="sc_socials_item">
+                    <a href="#" target="_blank" class="social_icons social_linkedin">
+                        <i class="fa fa-brands fa-linkedin"></i>
+
+                    </a>
+                </div>
+                <div class="container">
+                    <form action="https://www.google.com/search" method="get" target="_blank" id="search-form">
+                      <input name="q" type="text" placeholder="Search Google..." autocomplete="off"  >
+                            <button type="button"><i class="fa fas fa-microphone"></i></button> 
+                    </form>
+                    <p class="info"></p>
+                  </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- /footer -->
+
+<!-- copyright_wrap footer-->
+
+</div>
+<!-- Scroll to top -->
+<a  href="#" class="scroll_to_top icon- up"  title="Scroll to top">
+<i class="fa fa-solid fa-arrow-up"></i>
+
+
+</a>
+<!-- copyright_wrap footer-->
+<div class="copyright_wrap copyright_style_text scheme_dark">
+<div class="copyright_wrap_inner">
+    <div class="content_wrap">
+        <div class="copyright_text">
+            <a href="#" target="_blank" class="copyright_link">Mental Health</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- /copyright_wrap footer -->
+<!-- /Scroll to top -->
+
+<!-- /Scroll to top -->
+
+<!-- All Script -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script type='text/javascript' src="{% static 'js/_main.js' %}"></script>
+<script type='text/javascript' src="{% static 'js/packed.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/revslider/jquery.themepunch.revolution.min.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/revslider/jquery.themepunch.tools.min.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/revslider/jquery.themepunch.enablelog.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.slideanims.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.layeranimation.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.navigation.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.parallax.min.js '%}"></script>
+<script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.slideanims.min.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/revslider/extensions/revolution.extension.actions.min.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/theme.init.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/core.utils.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/core.init.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/theme.shortcodes.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/swiper/swiper.js'%}"></script>
+<script type='text/javascript' src="{% static 'js/isotope.pkgd.min.js'%}"></script>
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+
+<!-- /All Script -->
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a764b0c2b6b5386","token":"dab7be3e6ab04952b40d6c8e93f6cc2a","version":"2023.2.0","si":100}'
+crossorigin="anonymous"></script>
+</body>
+
+</html>

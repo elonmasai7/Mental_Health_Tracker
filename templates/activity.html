@@ -1,0 +1,727 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US" class="scheme_original">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg" />
+
+    <title> Site-Wide Activity - Cloe Brooks - Psychologist</title>
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+    <!-- /fonts -->
+
+    <!-- style -->
+    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/skin.responsive.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/responsive.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/font-awesome.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/shortcodes/theme.shortcodes.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/fontello/css/fontello.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/core.animation.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/skins/less/skin.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/custom-style.min.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='css/animations.min.css' type='text/css' media='all' />
+    <link rel="stylesheet" href="js/swiper/swiper.css" type="text/css" media="all">
+    <link rel="stylesheet" href="js/bbpress/css/boddypress.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="js/bbpress/css/plugin-bbpress.min.css" type="text/css" media="all">
+    <!-- /style -->
+</head>
+
+<body class="activity single-item groups group-power-of-education group-home home buddypress page page-parent page-template-default cloe_brooks_body body_style_wide body_transparent theme_skin_less article_style_stretch layout_single-standard template_single-standard scheme_original top_panel_show top_panel_above sidebar_hide sidebar_outer_hide">
+    <div class="body_wrap">
+        <div class="page_wrap">
+            <div class="top_panel_fixed_wrap"></div>
+            <!-- Header -->
+            <header class="top_panel_wrap top_panel_style_3 scheme_original">
+                <div class="top_panel_wrap_inner top_panel_inner_style_3 top_panel_position_above">
+                    <div class="scheme_dark">
+                        <div class="top_panel_top top_panel_inner_style_3">
+                            <div class="content_wrap clearfix">
+                                <div class="top_panel_top_contact_area contact_address">
+                                    <i class="fa fa-regular fa-flag"></i>
+                                    <span>123, Cairo Egypt, IL 60606</span>
+                                </div>
+                                <div class="top_panel_top_user_area">
+                                    <div class="top_panel_top_contact_area contact_email">
+                                        <i class="fa fa-solid fa-envelope"></i>
+                                        <span><a href="mailto:info@yoursite.com">info@yoursite.com</a></span>
+                                    </div>
+                                    <div class="top_panel_top_contact_area contact_phone">
+                                        <i class="fa fa-thin fa-phone"></i>
+
+                                        <span><a href="tel:+1234567890">123-456-7890</a></span>
+                                    </div>
+                                    <ul id="menu_user" class="menu_user_nav">
+                                        <li class="menu-item menu-item-type-post_type">
+                                            <a href="{% url 'appointment'%}">Make an appointment</a>
+  
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>                                                  
+                        </div>
+                    </div>
+                    <div class="scheme_light">
+                        <div class="top_panel_middle top_panel_inner_style_3">
+                            <div class="content_wrap">
+                                <div class="contact_logo">
+                                    <div class="logo">
+                                        <a href="">
+                                                <img src="{% static 'images/a55.png'%}" class="logo_main"  alt="">
+                                                <img src="{% static 'images/s22.png'%}" class="logo_fixed" alt="">
+                                            </a>
+                                    </div>
+                                </div>
+                                <div class="menu_main_wrap">
+                                    <nav class="menu_main_nav_area">
+                                        <ul id="menu_main" class="menu_main_nav" >
+                                            <li class="menu-item menu-item-has-children current-menu-item">
+                                                <a href="#">Home 
+                                                </a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item current_page_item current-menu-item">
+                                                        
+                                                        <a href="{% url 'index'%}">Home 1 </a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'index-2'%}">Home 2</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item current-menu-ancestor current-menu-parent menu-item-has-children">
+                                                <a href="{% url 'about-me'%}">About-us</a>
+                                                
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="#">Gallery</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'gallerygrid'%}">Grid Gallery</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'gallerymasonry'%}">Masonry Gallery</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'gallerycobbles'%}">Cobbles Gallery</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children"><a href="#">Blog</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'categorystandardblog'%}">Standard Blog</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'categorywithoutsidebar'%}">Without Sidebar</a>
+                                                    </li>
+                                                   
+                                                    
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="{% url 'shop'%}">Shop</a>
+                                                
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="{% url 'contact'%}">Contact</a>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="{% url 'depretion'%}">Tests</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'depretion'%}">Depretion</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'adhd'%}">ADHD</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'anxiety'%}">anxiety</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'bipolar'%}">Bipolar</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item menu-item-has-children">
+                                                <a href="{% url 'depretion'%}">Mental Health Genes Test</a>
+                                                <ul class="sub-menu">
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'depretion'%}">Depretion</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'adhd'%}">ADHD</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'anxiety'%}">anxiety</a>
+                                                    </li>
+                                                    <li class="menu-item">
+                                                        <a href="{% url 'bipolar'%}">Bipolar</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- /Header -->
+
+            <!-- header_mobile -->
+            <div class="header_mobile">
+                <div class="content_wrap">
+                    <div class="menu_button icon-menu"></div>
+                    <div class="logo">
+                        <a href="index.html">
+                                <img src="images/logo_light.png" class="logo_main" alt="">
+                            </a>
+                    </div>
+                </div>
+                <div class="side_wrap">
+                    <div class="close">Close</div>
+                    <!-- panel_top -->
+                    <div class="panel_top">
+                        <ul id="menu_main_mobile" class="menu_main_nav">
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Home</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="index.html">Home 1</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="index-2.html">Home 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Features</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="about-me.html">About Me</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="pricing.html">Pricing</a></li>
+                                    <li class="menu-item page_item">
+                                        <a href="shortcodes.html">Shortcodes</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="typography.html">Typography</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a target="_blank" href="doc/index.html">Documentation</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Gallery</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="gallery-grid.html">Grid Gallery</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="gallery-masonry.html">Masonry Gallery</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="gallery-cobbles.html">Cobbles Gallery</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#">Blog</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="category-standard-blog.html">Standard Blog</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="category-without-sidebar.html">Without Sidebar</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Masonry</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="category-masonry-2-columns.html">Masonry 2 Columns</a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="category-masonry-3-columns.html">Masonry 3 Columns</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#">Blog Portfolio</a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <a href="category-portfolio-2-columns.html">
+                                                        Portfolio 2 Columns
+                                                    </a>
+                                            </li>
+                                            <li class="menu-item">
+                                                <a href="category-portfolio-3-columns.html">
+                                                        Portfolio 3 Columns
+                                                    </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="category-post-formats.html">
+                                                Post Formats
+                                            </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="shop.html">Shop</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item">
+                                        <a href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="product-single.html">Single Product</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li class="menu-item menu-item-has-children current-menu-ancestor current-menu-parent ">
+                                <a href="#">Forums</a>
+                                <ul class="sub-menu">
+                                    <li class="menu-item current-menu-item">
+                                        <a href="activity.html">Activity</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="groups.html">Groups</a>
+                                    </li>
+                                    <li class="menu-item">
+                                        <a href="members.html">Members</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /panel_top -->
+
+                    <!-- panel_middle -->
+                    <div class="panel_middle">
+                        <div class="contact_field contact_phone">
+                            <span class="contact_icon icon-phone"></span>
+                            <span class="contact_label contact_phone">123-456-7890</span>
+                            <span class="contact_email">info@yoursite.com</span>
+                        </div>
+                    </div>
+                    <!-- /panel_middle -->
+                </div>
+                <div class="mask"></div>
+                <!-- /header_mobile -->
+            </div>
+        </div>
+
+        <!-- top_panel_title -->
+        <div class="top_panel_title top_panel_style_3  title_present breadcrumbs_present scheme_dark ">
+            <div class="top_panel_title_inner top_panel_inner_style_3 title_present_inner breadcrumbs_present_inner panel_img">
+                <div class="content_wrap">
+                    <h1 class="page_title">Site-Wide Activity</h1>
+                    <div class="breadcrumbs">
+                        <a class="breadcrumbs_item home" href="index.html">Home</a>
+                        <span class="breadcrumbs_delimiter"></span>
+                        <span class="breadcrumbs_item current">Site-Wide Activity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /top_panel_title -->
+
+        <!-- page_content_wrap -->
+        <div class="page_content_wrap page_paddings_yes">
+            <div class="content_wrap">
+                <div class="content">
+                    <div class="bp_activity type-bp_activity itemscope post_item post_item_single post_featured_default post_format_standard page type-page">
+                        <div class="post_content">
+                            <div id="buddypress">
+                                <div class="item-list-tabs activity-type-tabs" role="navigation">
+                                    <ul>
+                                        <li class="selected" id="activity-all">
+                                            <a href="#" title="The public activity for everyone on this site.">
+                                                    All Members 
+                                                    <span>15</span>
+                                                </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item-list-tabs no-ajax" id="subnav" role="navigation">
+                                    <ul>
+                                        <li class="feed">
+                                            <a href="#" title="RSS Feed">RSS</a>
+                                        </li>
+                                        <!-- activity-filter -->
+                                        <li id="activity-filter-select" class="last">
+                                            <label for="activity-filter-by">Show:</label>
+                                            <select id="activity-filter-by">
+                                                    <option value="-1">— Everything —</option>
+                                                    <option value="new_member">New Members</option>
+                                                    <option value="updated_profile">Profile Updates</option>
+                                                    <option value="activity_update">Updates</option>
+                                                    <option value="friendship_accepted,friendship_created">Friendships</option>
+                                                    <option value="created_group">New Groups</option>
+                                                    <option value="joined_group">Group Memberships</option>
+                                                    <option value="group_details_updated">Group Updates</option>
+                                                    <option value="new_blog_post">Posts</option>
+                                                    <option value="new_blog_comment">Comments</option>
+                                                    <option value="bbp_topic_create">Topics</option>
+                                                    <option value="bbp_reply_create">Replies</option>
+                                                </select>
+                                        </li>
+                                        <!-- /activity-filter -->
+                                    </ul>
+                                </div>
+                                <div class="activity">
+                                    <ul id="activity-stream" class="activity-list item-list">
+                                        <!-- activity-content -->
+                                        <li class="bbpress bbp_topic_create activity-item date-recorded-1461933381" id="activity-9">
+                                            <div class="activity-avatar">
+                                                <a href="#">
+                                                        <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe">
+                                                    </a>
+                                            </div>
+                                            <div class="activity-content">
+                                                <div class="activity-header">
+                                                    <p>
+                                                        <a href="#" rel="nofollow">
+                                                                John Doe
+                                                            </a> started the topic
+                                                        <a href="#">
+                                                                Lorem ipsum Forum Topic
+                                                            </a> in the forum
+                                                        <a href="#">
+                                                                Lorem ipsum Forum
+                                                            </a>
+                                                        <a href="#" class="view activity-time-since" title="View Discussion">
+                                                                <span class="time-since">
+                                                                    7 months, 1 week ago
+                                                                </span>
+                                                            </a>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-inner">
+                                                    <p>
+                                                        Aenean diam orci, blandit sit amet porta et, pellentesque id magna. Mauris iaculis, purus eu maximus scelerisque, ante velit accumsan eros, a luctus tellus turpis ac justo. Mauris dui lorem, fringilla in consectetur eu, venenatis non odio. Vestibulum
+                                                        aliquet suscipit turpis. Quisque vel purus nec sem sollicitudin fermentum non et metus. Fusce non…
+                                                        <span class="activity-read-more" id="activity-read-more-9">
+                                                                <a href="#" rel="nofollow">[Read more]</a>
+                                                            </span>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-meta"></div>
+                                            </div>
+                                        </li>
+                                        <!-- /activity-content -->
+
+                                        <!-- activity-content -->
+                                        <li class="profile new_avatar activity-item mini date-recorded-1461931919" id="activity-8">
+                                            <div class="activity-avatar">
+                                                <a href="#">
+                                                        <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe">
+                                                    </a>
+                                            </div>
+                                            <div class="activity-content">
+                                                <div class="activity-header">
+                                                    <p>
+                                                        <a href="#" title="John Doe">
+                                                                John Doe
+                                                            </a> changed their profile picture
+                                                        <a href="#" class="view activity-time-since" title="View Discussion">
+                                                                <span class="time-since">
+                                                                    7 months, 1 week ago
+                                                                </span>
+                                                            </a>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-meta"></div>
+                                            </div>
+                                            <div class="activity-comments"></div>
+                                        </li>
+                                        <!-- /activity-content -->
+
+                                        <!-- activity-content -->
+                                        <li class="groups activity_update activity-item date-recorded-1461931480" id="activity-7">
+                                            <div class="activity-avatar">
+                                                <a href="#">
+                                                        <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe">
+                                                    </a>
+                                            </div>
+                                            <div class="activity-content">
+                                                <div class="activity-header">
+                                                    <p>
+                                                        <a href="#" title="TRX_admin">
+                                                                TRX_admin
+                                                            </a> posted an update in the group
+                                                        <a href="#" class="">
+                                                                <img src="images/b177292c1d49c04b109c3a28aaa9cab8-bpthumb.jpg" class="avatar22 avatar group-1-avatar avatar-20 photo" alt="Group logo of Nature healing">
+                                                            </a>
+                                                        <a href="#">
+                                                                Nature healing
+                                                            </a>
+                                                        <a href="#" class="view activity-time-since" title="View Discussion">
+                                                                <span class="time-since">
+                                                                    7 months, 1 week ago
+                                                                </span>
+                                                            </a>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-inner">
+                                                    <p>Aenean diam orci, blandit sit amet porta et, pellentesque id magna. Mauris iaculis, purus eu maximus scelerisque, ante velit accumsan eros, a luctus tellus turpis ac justo.</p>
+                                                </div>
+                                                <div class="activity-meta"></div>
+                                            </div>
+                                            <div class="activity-comments"></div>
+                                        </li>
+                                        <!-- /activity-content -->
+
+                                        <!-- activity-content -->
+                                        <li class="groups activity_update activity-item has-comments date-recorded-1461931257" id="activity-4">
+                                            <div class="activity-avatar">
+                                                <a href="#">
+                                                        <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe">
+                                                    </a>
+                                            </div>
+                                            <div class="activity-content">
+                                                <div class="activity-header">
+                                                    <p>
+                                                        <a href="#" title="TRX_admin">
+                                                                TRX_admin
+                                                            </a> posted an update in the group
+                                                        <a href="#" class="">
+                                                                <img src="images/2c0d5e56b7aa68719f8056213ff4ac48-bpthumb.jpg" class="avatar22 avatar group-2-avatar avatar-20 photo" alt="Group logo of Power of Education">
+                                                            </a>
+                                                        <a href="#">Power of Education</a>
+                                                        <a href="#" class="view activity-time-since" title="View Discussion">
+                                                                <span class="time-since">
+                                                                    7 months, 1 week ago
+                                                                </span>
+                                                            </a>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-inner">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                                </div>
+                                                <div class="activity-meta"></div>
+                                            </div>
+                                            <!-- activity-comments -->
+                                            <div class="activity-comments">
+                                                <ul>
+                                                    <li id="acomment-5">
+                                                        <div class="acomment-avatar">
+                                                            <a href="#">
+                                                                    <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe"> 
+                                                                </a>
+                                                        </div>
+                                                        <div class="acomment-meta">
+                                                            <a href="#">
+                                                                    John Doe
+                                                                </a> replied
+                                                            <a href="#" class="activity-time-since">
+                                                                    <span class="time-since">
+                                                                        7 months, 1 week ago
+                                                                    </span>
+                                                                </a>
+                                                        </div>
+                                                        <div class="acomment-content">
+                                                            <p>Vestibulum aliquet suscipit turpis</p>
+                                                        </div>
+                                                        <div class="acomment-options"></div>
+                                                    </li>
+                                                    <li id="acomment-6">
+                                                        <div class="acomment-avatar">
+                                                            <a href="#">
+                                                                    <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe"> 
+                                                                </a>
+                                                        </div>
+                                                        <div class="acomment-meta">
+                                                            <a href="#">
+                                                                    John Doe
+                                                                </a> replied
+                                                            <a href="#" class="activity-time-since">
+                                                                    <span class="time-since">7 months, 1 week ago</span>
+                                                                </a>
+                                                        </div>
+                                                        <div class="acomment-content">
+                                                            <p>
+                                                                Fusce pellentesque dui quis lorem gravida tristique. Sed efficitur efficitur dolor sit amet ultrices. Aenean diam orci, blandit sit amet porta et, pellentesque id magna. Mauris iaculis, purus eu maximus scelerisque, ante velit accumsan eros, a luctus
+                                                                tellus turpis ac justo. Mauris dui lorem, fringilla in consectetur eu, venenatis non odio.…
+                                                                <span class="activity-read-more" id="acomment-read-more-6">
+                                                                        <a href="#" rel="nofollow">
+                                                                            [Read more]
+                                                                        </a>
+                                                                    </span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="acomment-options"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /activity-comments -->
+                                        </li>
+                                        <!-- /activity-content -->
+
+                                        <!-- activity-content -->
+                                        <li class="groups created_group activity-item mini date-recorded-1461931175" id="activity-3">
+                                            <div class="activity-avatar">
+                                                <a href="#">
+                                                        <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe">
+                                                    </a>
+                                            </div>
+                                            <div class="activity-content">
+                                                <div class="activity-header">
+                                                    <p>
+                                                        <a href="#" title="John Doe">
+                                                                John Doe
+                                                            </a> created the group
+                                                        <a href="#" class="">
+                                                                <img src="images/2c0d5e56b7aa68719f8056213ff4ac48-bpthumb.jpg" class="avatar22 avatar group-2-avatar avatar-20 photo" alt="Group logo of Power of Education">
+                                                            </a>
+                                                        <a href="#">
+                                                                Power of Education
+                                                            </a>
+                                                        <a href="#" class="view activity-time-since" title="View Discussion">
+                                                                <span class="time-since">
+                                                                    7 months, 1 week ago
+                                                                </span>
+                                                            </a>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-meta">
+                                                </div>
+                                            </div>
+                                            <div class="activity-comments"></div>
+                                        </li>
+                                        <!-- /activity-content -->
+
+                                        <!-- activity-content -->
+                                        <li class="groups created_group activity-item mini date-recorded-1461930955" id="activity-2">
+                                            <div class="activity-avatar">
+                                                <a href="#">
+                                                        <img src="images/9ec890e28a3ea5904ecbc03bf6a22f7d-bpthumb.jpg" class="avatar user-1-avatar avatar-50 photo" alt="Profile picture of John Doe">
+                                                    </a>
+                                            </div>
+
+                                            <div class="activity-content">
+                                                <div class="activity-header">
+                                                    <p>
+                                                        <a href="#" title="John Doe">
+                                                                John Doe
+                                                            </a> created the group
+                                                        <a href="#" class="">
+                                                                <img src="images/b177292c1d49c04b109c3a28aaa9cab8-bpthumb.jpg" class="avatar22 avatar group-1-avatar avatar-20 photo" alt="Group logo of Nature healing">
+                                                            </a>
+                                                        <a href="#">Nature healing</a>
+                                                        <a href="#" class="view activity-time-since" title="View Discussion">
+                                                                <span class="time-since">
+                                                                    7 months, 1 week ago
+                                                                </span>
+                                                            </a>
+                                                    </p>
+                                                </div>
+                                                <div class="activity-meta"></div>
+                                            </div>
+                                            <div class="activity-comments"></div>
+                                        </li>
+                                        <!-- /activity-content -->
+                                    </ul>
+                                    <form action="#" name="activity-loop-form" id="activity-loop-form" method="post">
+                                        <input type="hidden" id="_wpnonce_activity_filter" name="_wpnonce_activity_filter" value="e357739a88">
+                                        <input type="hidden" name="_wp_http_referer" value="#">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="related_wrap related_wrap_empty"></div>
+                </div>
+            </div>
+        </div>
+        <!-- /page_content_wrap -->
+
+        <!-- footer -->
+        <footer class="contacts_wrap scheme_light">
+            <div class="contacts_wrap_inner">
+                <div class="content_wrap">
+                    <div class="logo">
+                        <a href="index.html">
+                                <img src="images/logo_footer.png" class="logo_footer" alt="">
+                            </a>
+                    </div>
+                    <div class="contacts_address">
+                        <address class="address_right">
+                                Phone: <a href="tel:+1234567890">123-456-7890</a><br> Fax: <a href="tel:+1234567890">123.456.7890</a>
+                            </address>
+                        <address class="address_left">
+                                123, New Lenox<br> USA, Chicago, IL 60606 
+                            </address>
+                    </div>
+                    <div class="sc_socials sc_socials_type_icons sc_socials_shape_round sc_socials_size_tiny">
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_twitter">
+                                    <span class="icon-twitter"></span>
+                                </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_facebook">
+                                    <span class="icon-facebook"></span>
+                                </a>
+                        </div>
+                        <div class="sc_socials_item">
+                            <a href="#" target="_blank" class="social_icons social_linkedin">
+                                    <span class="icon-linkedin"></span>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!-- copyright_wrap footer-->
+        <div class="copyright_wrap copyright_style_text scheme_dark">
+            <div class="copyright_wrap_inner">
+                <div class="content_wrap">
+                    <div class="copyright_text">
+                        <a href="https://themerex.net/" target="_blank" class="copyright_link">ThemeREX © 2019 All Rights Reserved</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /copyright_wrap footer -->
+    </div>
+    <!-- Scroll to top -->
+    <a  href="#" class="scroll_to_top icon- up"  title="Scroll to top">
+        <i class="fa fa-solid fa-arrow-up"></i>
+
+       
+    </a>
+    
+    <!-- /Scroll to top -->
+
+    <!-- All Script -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type='text/javascript' src='js/_main.js'></script>
+    <script type='text/javascript' src='js/packed.js'></script>
+    <script type='text/javascript' src='js/theme.init.js'></script>
+    <script type='text/javascript' src='js/core.utils.js'></script>
+    <script type='text/javascript' src='js/core.init.js'></script>
+    <script type='text/javascript' src='js/theme.shortcodes.js'></script>
+    <script type='text/javascript' src='js/bbpress/js/editor.js'></script>
+    <!-- /All Script -->
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"7a767d572ae25385","token":"dab7be3e6ab04952b40d6c8e93f6cc2a","version":"2023.2.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
