@@ -1,9 +1,6 @@
 from django.urls import path
-from . import views
+from .views import home
 
 urlpatterns = [
-    path('about/', views.about, name='about'),
-    path('predict/', views.predict, name='predict'),
-    path('', views.home, name='home'),  # Add this line to handle the empty path
-    # other URL patterns
+    path('', home, name='home'),
 ]
