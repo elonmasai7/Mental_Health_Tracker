@@ -34,6 +34,12 @@ How to Use:
     Installation:
         For the standalone version (Tkinter), simply run the provided Python script.
         For the web application version (Flask), install Flask (pip install Flask) and run the Python script.
+        sign up page
+        
+![signup](https://github.com/elonmasai7/Mental_Health_Tracker/assets/123534505/c095cafc-d0a1-4c83-be36-3081d39832ac)
+
+login page 
+![sigin 2](https://github.com/elonmasai7/Mental_Health_Tracker/assets/123534505/8b60dc41-69d2-495b-aebd-40a255280e9d)
 
     Usage:
         Input your mood, emotions, and activities into the designated fields.
