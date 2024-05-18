@@ -1,6 +1,5 @@
 Mental Health Tracker
 
-Description:
 
 The Mental Health Tracker is a user-friendly application designed to help individuals monitor and manage their mental well-being effectively. It provides a convenient interface for users to input their daily mood, emotions, activities, and any other relevant information related to their mental health.
 
@@ -58,6 +57,7 @@ We would like to express our gratitude to the open-source community for their in
 Feedback:
 
 We welcome your feedback on the Mental Health Tracker! If you have any suggestions, questions, or concerns, please don't hesitate to contact us.
+<script async src="https://tally.so/widgets/embed.js"></script>
 
 Disclaimer:
 
