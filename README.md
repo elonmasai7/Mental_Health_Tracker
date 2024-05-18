@@ -1,7 +1,4 @@
 Mental Health Tracker
-
-Description:
-
 The Mental Health Tracker is a user-friendly application designed to help individuals monitor and manage their mental well-being effectively. It provides a convenient interface for users to input their daily mood, emotions, activities, and any other relevant information related to their mental health.
 
 This tool is particularly beneficial for individuals seeking to understand their emotional patterns, identify triggers, and track progress towards their mental health goals. It offers features such as data analysis, goal setting, reminder systems, privacy measures, and access to resources for mental health support.
